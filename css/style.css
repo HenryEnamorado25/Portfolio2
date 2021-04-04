@@ -5,12 +5,11 @@ body {
 }
 /*header begin*/
 .header {
-  background-image: linear-gradient(
-    to right,
-    rgb(27, 27, 27) 25%,
-    rgb(9, 9, 9) 75%
-  );
+  background-image: url("../images/bg-header.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   height: 100vh;
   flex-direction: column;
   align-items: center;
@@ -102,6 +101,7 @@ body {
   color: rgb(1, 160, 252);
   font-size: 3rem;
   letter-spacing: 0.3rem;
+  text-shadow: 1rem 1rem 1px rgb(59, 59, 59);
 }
 .aboutContent {
   width: 100%;
@@ -109,7 +109,6 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /*border: yellow solid 1px;*/
   align-items: center;
 }
 .aboutContent p {
@@ -153,6 +152,7 @@ body {
   padding-top: 3rem;
   font-size: 3rem;
   letter-spacing: 0.3rem;
+  text-shadow: 1rem -1rem 2px rgb(59, 59, 59);
 }
 .projects {
   display: flex;
@@ -164,21 +164,50 @@ body {
   border: rgb(1, 160, 252) solid 2px;
   border-radius: 20px;
   margin: 2rem;
-  width: 33%;
-  height: fit-content;
+  width: 40%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .project img {
   width: 90%;
-  height: 80%;
+  height: 50%;
   border: rgb(1, 160, 252) solid 2px;
   border-radius: 20px;
   margin: 1rem;
+  object-fit: cover;
+}
+.project p {
+  font-size: 1.3rem;
+  margin: 0.1rem 2rem;
+}
+.project span {
+  color: rgb(1, 160, 252);
 }
 .projectName {
+  color: rgb(1, 160, 252);
   font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  text-decoration: underline;
+}
+.project a {
+  font-size: 1.5rem;
+  color: rgb(1, 120, 200);
+  font-family: "Raleway", sans-serif;
+  border-right: 1px solid rgb(1, 160, 252);
+  border-left: 1px solid rgb(1, 160, 252);
+  padding: 0.5rem;
+  margin: 2rem;
+}
+.project a:hover {
+  text-decoration: double underline;
+  border-right: 2px solid rgb(1, 160, 252);
+  border-left: 2px solid rgb(1, 160, 252);
+  color: rgb(1, 160, 252);
+}
+.three,
+.four {
 }
 
 /*project section end */
